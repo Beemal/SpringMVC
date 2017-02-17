@@ -10,8 +10,8 @@
     <section>         
       <div  class="jumbotron">           
         <div class="container">              
-          <h1> ${greeting}</h1>          
-          <p>${tagline}</p>         
+          <h1> ${greeting}</h1>      <%-- ${greeting} is a variable --%>    
+          <p>${tagline}</p>        <%--${tagline}is a variable --%> 
         </div>       
       </div>     
     </section>    
