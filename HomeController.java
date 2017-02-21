@@ -1,18 +1,17 @@
 package com.packt.webstore.controller;
 
-import org.springframework.sterotype.Controller;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework..web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HomeController{
-  
-  @RequestMapping("/")
-  public String welcome(Model model)
-  {
-    model.addAtribute("greeting","Welcome to Web Store");//greeting is a variable 
-     model.addAtribute("tagline","The one and only amazing webstore");//${tagline} is a variable
-    
-    return "welcome";
-  }
+public class HomeController {
+	@RequestMapping("/")
+	  public String welcome(Model model)
+	  {
+	    model.addAttribute("greeting","Welcome to Web Store");//greeting is a variable 
+	    model.addAttribute("tagline","The one and only amazing webstore");//${tagline} is a variable
+	    System.out.println("-----------Controller called----------");
+	    return "welcome";
+	  }
 }
